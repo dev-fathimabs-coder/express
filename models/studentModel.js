@@ -12,3 +12,4 @@ let studentSchema=new mongoose.Schema({
 let Student=new mongoose.model('student',studentSchema)
 
 module.exports=Student;
+

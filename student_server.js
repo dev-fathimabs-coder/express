@@ -1,5 +1,5 @@
 let express = require('express');
-
+let cors = require('cors');
 //IMPORT CONNECTION CODE & SCHEMA 
 
 let Student = require('./student');
@@ -8,7 +8,7 @@ let connectDb = require('./newDb')
 
 let app = express();
 app.use(express.json());
-
+app.use(cors())
 
 //CONNECT DB
 
@@ -46,3 +46,16 @@ app.listen(3000, () => {
     console.log("Server Connected");
 
 })
+
+
+
+function hello() {
+    let num;
+
+
+    return {
+        
+    }
+}
+
+let obj1 = hello()
